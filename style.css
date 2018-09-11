@@ -1,0 +1,140 @@
+/* Navbar */
+
+li{
+    display:inline-block
+}
+
+.float{
+    position: absolute;
+}
+
+/* Carousel */
+
+.carousel-item {
+    max-height: 750px;
+}
+
+.w-100{
+    position: relative;
+    text-align: center;
+    height:500px;
+}
+
+.carousel-text{
+
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Nav pills  */
+
+/* Cards */
+
+.all-cards{
+    margin: auto;
+}
+
+.card{
+    display:inline-block
+}
+
+.card-img-top{
+    height: 10em;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.box_portrait_gandalf {   
+    background-image: url("http://images.innoveduc.fr/integration_gandalf.png");
+    background-size: 100% 100%;
+    opacity: 0.60;
+    transition-property: opacity;    
+    transition-duration: 1s;
+    text-align: center
+}
+
+.box_portrait_hobbit {   
+    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--UMOhmGHL--/c_scale,f_auto,fl_progressive,q_80,w_800/jhkzcoxjwr6ldslhil4h.jpg");
+    background-size: 100% 100%;
+    opacity: 0.60;
+    transition-property: opacity;    
+    transition-duration: 1s;
+    text-align: center
+}
+
+.box_portrait_dwarf {   
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/11/26/179300/2cccff820466f42785bc2e36c307e810-700.jpg");
+    background-size: 100% 100%;
+    opacity: 0.60;
+    transition-property: opacity;    
+    transition-duration: 1s;
+    text-align: center
+}
+
+.box_portrait:hover {
+    opacity: 1;
+}
+
+.reward {
+    margin : 0px 10px 0 10px;
+    padding: 15px 15px 15px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.90;
+    transition-property: opacity;    
+    transition-duration: 1s;
+}
+
+.box_portrait:hover .reward {
+    opacity: 0.00;
+}
+
+.amount_reward {
+    color:orange;
+}
+
+.name {
+    font-size: 3em;
+    color: white;
+    padding-top: 5%;
+    transition-property: padding-top, font-size;    
+    transition-duration: 1s;
+}
+
+.box_portrait:hover .name {
+    padding-top: 25%;
+    font-size : 2em;
+}
+
+.box_portrait_hobbit:hover .name {
+    padding-top: 40%;
+    font-size : 2em;
+}
+
+/* Reward */
+
+/* Hunters */
+
+
+/* The ring */
+
+table{
+    margin: 0 auto;
+}
+td, th{
+    text-align:center;
+    padding-left: 50%;
+    width:50%
+}
+
+#gollum-pix{
+    border-radius: 70px
+}
+
+/* Contact us */
+input, select{
+    margin-top:2%;
+}
