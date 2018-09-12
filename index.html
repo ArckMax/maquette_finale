@@ -12,19 +12,35 @@
 <body class="container">
     <div class="col-10 offset-1 justify-content-center">
         <header>
-            <div class="navbar">
-                <span class="col-3">FindThePrecious.com</span>
-                <nav>
-                    <ul>
-                        <li><a href="#fellows">Fellows</a></li>
-                        <li><a href="#ring">The Ring</a></li>
-                        <li><a href="#reward">Get my reward</a></li>
-                        <li><a href="#hunters">Best hunters</a></li>
-                        <li><a href="#join">Join the army</a></li>
-                        <li><a href="#contact">Contact us</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">FindThePrecious.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Fellows <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">The Ring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get my reward</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Best hunters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join the army</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
                     </ul>
-                </nav>
-            </div> 
+                </div>
+            </nav>
         </header>
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -80,8 +96,9 @@
                 <p>Already captured</p>
             </li>
         </ul>
-        <div class="all-cards">
-            <div class="card" style="width: 18rem">
+        
+        <div class="all-cards" class="container">
+            <div class="card d-inline-block" style="width: 18rem">
                 <div class="container box_portrait_gandalf box_portrait card-img-top">
                     <div class="reward">Reward <span class="amount_reward">1000</span> golden coins</div>
                     <div class="name">Gandalf</div>
@@ -92,7 +109,7 @@
                 </div>
             </div>
                 
-            <div class="card " style="width: 18rem;">
+            <div class="card d-inline-block" style="width: 18rem;">
                 <div class="container box_portrait_hobbit box_portrait card-img-top">
                     <div class="name">DEAD</div>
                 </div>
@@ -102,7 +119,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 18rem;">
+            <div class="card d-inline-block" style="width: 18rem;">
                 <div class="container box_portrait_dwarf box_portrait card-img-top">
                 </div>
                 <div class="card-body">
@@ -115,7 +132,7 @@
         <hr/>
 
     
-        <section id="reward" class="col-10 offset-1" >
+        <section id="reward" class="col-12" >
             <h2>I have captured one of them, how to get my reward ?</h2>
             <div class="container justify-content-center media">
                 <div class="col-8 d-inline-block">
