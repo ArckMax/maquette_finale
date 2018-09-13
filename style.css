@@ -1,4 +1,48 @@
-/* Navbar */
+/* Font declarations & class */
+
+@font-face{
+    font-family: "partybusiness";
+    src: url("./fonts/nancy-lorenz_party-business/partybusiness.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "aniron-regular";
+    src: url("./fonts/pete-klassen_aniron/anicm__.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "aniron-bold";
+    src: url("./fonts/pete-klassen_aniron/anicb__.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "annatar";
+    src: url("./fonts/tengwar_annatar/tngan.ttf") format("truetype");
+}
+
+.party-business-font{
+    font-family: "partybusiness", 'Times New Roman', Times, serif;  
+}
+
+.aniron-regular-font{
+    font-family: "aniron-regular",'Times New Roman', Times, serif
+}
+
+.aniron-bold-font{
+    font-family: "aniron-bold", 'Times New Roman', Times, serif
+}
+
+.annatar-font{
+    font-family: "annatar", 'Times New Roman', Times, serif;
+    color: #FE661D;
+}
+
+body{
+    background-color: #F4F1EA;
+    font-family: "partybusiness", 'Times New Roman', Times, serif
+}
+
+/* ------------------------- Navbar ------------------------- */
 
 li{
     display:inline-block
@@ -7,8 +51,27 @@ li{
 .float{
     position: absolute;
 }
+.navbar-brand{
+    font-size:2em;
+}
+.navbar{
+    font-size:1.8em;
+    background-color: #FE661D;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 
-/* Carousel */
+.nav-item .nav-link:hover{
+    text-decoration: underline #FE661D;
+    color:#FE661D;
+    opacity: 1;
+}
+
+.nav-item .nav-link{
+    color: #000000;
+    opacity: 0.5;
+}
+/* --------------------- Carousel -------------------- */
 
 .carousel-item {
     max-height: 750px;
@@ -19,9 +82,13 @@ li{
     text-align: center;
     height:500px;
 }
+.carousel-text h3{
+    font-size:2.5em;
+}
 
 .carousel-text{
 
+    font-size:2em;
     color:white;
     position: absolute;
     top: 50%;
@@ -29,25 +96,46 @@ li{
     transform: translate(-50%, -50%);
 }
 
-/* Nav pills  */
+/* -----------------Fellows ----------------- */
 
-/* Cards */
+.fellows{
+    font-size : 2.5em;
+    margin-top:25px;
+}
+
+/*  ----------------- Nav pills  ----------------- */
+
+.nav-pills .nav-item{
+  font-size:2.4em;
+  text-decoration: underline #FE661D;
+}
+
+/* ---------------------  Cards ------------------- */
 
 .all-cards{
     margin: auto;
 }
 
-.card{
-    display:inline-block
+.heroes{
+    display:inline-block;
+    margin-top:25px;
+    background-color: black;
+    border: 10px solid #F4F1EA;
+    min-width: 350px;
 }
 
 .card-img-top{
-    height: 10em;
+    padding-top: 50px;
+    height: 300px;
+    width: 100%;
     margin: 0 auto;
-    border-radius: 15px;
 }
-.box_portrait_gandalf {   
-    background-image: url("http://images.innoveduc.fr/integration_gandalf.png");
+
+.box_portrait_gandalf { 
+    margin-top: 20px; 
+    height: 450px;
+    width:100%;  
+    background-image: url("img/gandalf.png");
     background-size: 100% 100%;
     opacity: 0.60;
     transition-property: opacity;    
@@ -55,8 +143,10 @@ li{
     text-align: center
 }
 
-.box_portrait_hobbit {   
-    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--UMOhmGHL--/c_scale,f_auto,fl_progressive,q_80,w_800/jhkzcoxjwr6ldslhil4h.jpg");
+.box_portrait_aragorn {  
+    margin-top: 20px; 
+    height: 450px;
+    background-image: url("img/aragorn.png");
     background-size: 100% 100%;
     opacity: 0.60;
     transition-property: opacity;    
@@ -64,8 +154,10 @@ li{
     text-align: center
 }
 
-.box_portrait_dwarf {   
-    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/11/26/179300/2cccff820466f42785bc2e36c307e810-700.jpg");
+.box_portrait_dwarf {  
+    margin-top: 20px; 
+    height: 450px;
+    background-image: url("img/gimli.png");
     background-size: 100% 100%;
     opacity: 0.60;
     transition-property: opacity;    
@@ -88,6 +180,25 @@ li{
     transition-duration: 1s;
 }
 
+.reward-dead {
+
+    color : #FE661D;
+    font-size:2em;
+    margin : 0px 10px 0 10px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 25px;
+    background-color:transparent;
+    border:none;
+    opacity: 0.90;
+    transition-property: opacity;    
+    transition-duration: 1s;
+}
+
+.dead{
+    text-decoration-line: line-through;
+    text-decoration-color: #FE661D;
+}
+
 .box_portrait:hover .reward {
     opacity: 0.00;
 }
@@ -97,9 +208,9 @@ li{
 }
 
 .name {
-    font-size: 3em;
+    font-size: 4em;
     color: white;
-    padding-top: 5%;
+    padding-top: 50%;
     transition-property: padding-top, font-size;    
     transition-duration: 1s;
 }
@@ -114,24 +225,68 @@ li{
     font-size : 2em;
 }
 
-/* Reward */
+.card-text{
+    color:white;
+    font-size: 2.5em;
+}
 
-/* Hunters */
+/* --------------- Reward  -------------------*/
+
+#reward-reclaim{
+    background-color:black;
+    color:white;
+    height:15em;
+}
+
+.reward.reclaim{
+    font-size: 2.5em
+}
 
 
-/* The ring */
+#reward-reclaim h2{
+    font-size : 3em
+}
+
+#coin-reward{
+    width: 15%
+}
+
+/* ------------------ Hunters------------------ */
+
+
+/* -----------------------The ring----------------- */
+
+.about-ring .card {
+    margin-top:25px;
+    margin-bottom: 25px
+}
+
+.card-header{
+    background-color: #FE661D;
+}
+
+.about-ring{
+    background-color:black;
+}
+
+.white-title{
+    color:#FFF;
+}
 
 table{
     margin: 0 auto;
 }
 td, th{
-    text-align:center;
+    text-align:center; 
     padding-left: 50%;
     width:50%
 }
 
+.gollum-talk {
+    font-size:2em;
+}
 #gollum-pix{
-    border-radius: 70px
+    border-radius: 50% ;
 }
 
 /* Contact us */
