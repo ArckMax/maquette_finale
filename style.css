@@ -68,10 +68,9 @@ li{
 }
 
 .nav-item .nav-link{
-    color: #000000;
+    color: #fff;
     opacity: 0.5;
     font-family: "aniron-bold", 'Times New Roman', Times, serif;
-    text-decoration-color: #FFF;
     text-align: center;
 }
 /* --------------------- Carousel -------------------- */
