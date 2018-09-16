@@ -12,7 +12,7 @@
 
 @font-face{
     font-family: "aniron-bold";
-    src: url("./fonts/pete-klassen_aniron/anicb__.ttf") format("truetype");
+    src: url("./fonts/pete-klassen_aniron/anirm___.ttf") format("truetype");
 }
 
 @font-face{
@@ -70,6 +70,9 @@ li{
 .nav-item .nav-link{
     color: #000000;
     opacity: 0.5;
+    font-family: "aniron-bold", 'Times New Roman', Times, serif;
+    text-decoration-color: #FFF;
+    text-align: center;
 }
 /* --------------------- Carousel -------------------- */
 
@@ -235,11 +238,15 @@ li{
 #reward-reclaim{
     background-color:black;
     color:white;
-    height:15em;
+    height:300px;
 }
 
 .reward.reclaim{
     font-size: 2.5em
+}
+
+.reward.reclaim-2 {
+    margin-top: 100px
 }
 
 
