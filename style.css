@@ -42,6 +42,101 @@ body{
     font-family: "partybusiness", 'Times New Roman', Times, serif
 }
 
+/* CSS RINGS Compiled */
+
+
+.container-rings{
+    margin-top:50px;
+}
+.row-ring{
+    margin-bottom: 25px;
+}
+
+.black-rings-container{
+    position:relative;
+    margin-top: 150px;
+}
+.orangeRing {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ff6100;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+  }
+  
+  .yellowRing {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #efdc0e;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: 5px 5px 2px #f6eb6d inset;
+    box-shadow: 5px 5px 2px #f6eb6d;
+  }
+  
+  .blackRings span:nth-child(1) {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #000000;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    box-shadow: 2px 2px 2px #0d0d0d inset;
+  }
+  .blackRings span:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    border: 6px solid #000000;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    box-shadow: 2px 2px 2px #0d0d0d inset;
+  }
+  .blackRings span:nth-child(3) {
+    width: 105px;
+    height: 105px;
+    border: 9px solid #000000;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    box-shadow: 2px 2px 2px #0d0d0d inset;
+  }
+  .blackRings span:nth-child(4) {
+    width: 140px;
+    height: 140px;
+    border: 12px solid #000000;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    box-shadow: 2px 2px 2px #0d0d0d inset;
+  }
+  .blackRings span:nth-child(5) {
+    width: 175px;
+    height: 175px;
+    border: 15px solid #000000;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 2px 2px 2px #0d0d0d inset;
+  }
+
 /* ------------------------- Navbar ------------------------- */
 
 li{
@@ -67,10 +162,15 @@ li{
     opacity: 1;
 }
 
+.navbar .collapse{
+    color:#FFF;
+}
+
 .nav-item .nav-link{
-    color: #fff;
+    color: #000000;
     opacity: 0.5;
     font-family: "aniron-bold", 'Times New Roman', Times, serif;
+    text-decoration-color: #FFF;
     text-align: center;
 }
 /* --------------------- Carousel -------------------- */

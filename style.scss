@@ -1,0 +1,32 @@
+@mixin myRings($xy, $border, $color){
+    width: $xy;
+    height: $xy;
+    border: $border solid $color;
+    border-radius: 100%;
+    display:inline-block;
+    background-color:transparent;
+}
+
+.orangeRing{
+    @include myRings(50px, 5px, #ff6100);
+}
+
+.yellowRing{
+  @include myRings(100px, 10px, #efdc0e);
+  box-shadow: 5px 5px 2px lighten(#efdc0e,20) inset;
+  box-shadow: 5px 5px 2px lighten(#efdc0e, 20);
+}
+
+.blackRings{
+  @for $i from 1 through 5 {
+    span:nth-child(#{$i}) {
+        @include myRings(35px*$i, 3px*$i, #000000);
+        position: absolute;
+        bottom:0;
+        left : 40% + 2%*$i;
+        box-shadow: 2px 2px 2px lighten(#000000,5) inset;
+    }
+    }
+}
+
+
